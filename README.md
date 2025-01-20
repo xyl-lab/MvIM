@@ -2,6 +2,7 @@
 * **datasets**: This directory contains three datasets for MvIM model validation.
 * **logfiles**: This directory contains log files of the model training process.
 * **model**: This directory contains the model structure.
+* **pics**: Save the images used in the `README` file.
 * **IModel.pt**: This file saves the trained model parameters.
 * **TrainAndTest.ipynb**: This file performs model training and testing
 # Background
