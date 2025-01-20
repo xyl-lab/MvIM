@@ -33,6 +33,7 @@ as possible, and the reconstruction ensures that the MvIM converges to the data 
 <center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="./pics/UnionLearning.png">    <br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">Training process of MvIM</div> </center>
 # Parameters for baseline
 ## BRITS
+
 * @article{cao2018brits,
     title={Brits: Bidirectional recurrent imputation for time series},
     author={Cao, Wei and Wang, Dong and Li, Jian and Zhou, Hao and Li, Lei and Li, Yitan},
@@ -90,4 +91,9 @@ as possible, and the reconstruction ensures that the MvIM converges to the data 
 * https://github.com/WenjieDu/SAITS
 * Parameter setting: Dimension of data embedding: 24, Dimension of nodel embedding: 80, Dimension of learnable projection: 10, Number of attention heads 4, Dimension of feedforward connection layer: 128, Number of network layers: 2
 # Experimental environment
+* Server hardware configuration: operating system is Ubuntu 18.04.6 LTS, graphics card model is RTX A5000 GPU, CPU model is Intel Xeon Gold 6230R CPU。
+* Software environment: python3.9, pytorch2.10GPU
 # Experimental result
+Each model in this paper fills missing values ​​in time series data and uses root mean square error RMSE, mean absolute error MAE, and mean relative error MRE as evaluation indicators. The interpolation results of each model are shown in the following table.
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="./pics/Result.jpg">    <br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">Imputation results of each model</div> </center>
