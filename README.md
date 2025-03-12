@@ -1,8 +1,9 @@
 # Source code file directory description
-* **datasets**: This directory contains three datasets for MvIM model validation.
+* **datasets**: This directory contains three datasets for MvIM model validation. The three `.csv` files in the first-level directory of Datasets correspond to the three phases of the sinking of the open caisson, which are denoised using the moving average algorithm with a sliding window size is set to 14. The `wo Denoising` directory under `datasets` contains three folders, each of which contains two `.csv` files that have not been denoised. The `stress.csv` file saves the bottom structure stress series, while the `targets.csv` saves the sinking attitude time series of the open caisson.
 * **logfiles**: This directory contains log files of the model training process.
 * **model**: This directory contains the model structure.
 * **pics**: Save the images used in the `README` file.
+* **data_processing.py**: Save the code for the moving average algorithm.
 * **IModel.pt**: This file saves the trained model parameters.
 * **TrainAndTest.ipynb**: This file performs model training and testing
 # Background
